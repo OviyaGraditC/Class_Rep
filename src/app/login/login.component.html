@@ -1,0 +1,14 @@
+<p>login works!</p>
+<div class="container">
+    <div class="login_box_container text-center">
+    <h3> Login </h3>
+    <select name="login_type" class="input_box mt-3 mb-3" id="login_type">
+        <option value="Student">Student</option>
+        <option value="Tutor">Tutor</option>
+        </select><br>
+    <input type="text" id="username" class="input_box mt-3 mb-3" placeholder="Enter Username"><br>
+    <input type="number" id="contactnumber" class="input_box mt-3 mb-3" placeholder="Enter Contact Number"><br>
+    <button type="button" class="input_box mt-3 mb-3" id="login_button">Login</button><br>
+    <div class="forget_psd_line"><a>Don't have an account?</a><a [routerLink]="forgetPsd">Create One</a></div><br>
+    <div class="forget_psd_line"><a [routerLink]="forgetPsd">Forget Password</a></div>
+</div></div>
