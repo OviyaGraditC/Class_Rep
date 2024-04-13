@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -12,6 +12,8 @@ import { ScanPageComponent } from './scan-page/scan-page.component';
 import { StuAttendanceComponent } from './stu-attendance/stu-attendance.component';
 import { TutorClassesComponent } from './tutor-classes/tutor-classes.component';
 import { ForgetPsdComponent } from './forget-psd/forget-psd.component';
+import { RegisterSplitPageComponent } from './register-split-page/register-split-page.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,15 @@ import { ForgetPsdComponent } from './forget-psd/forget-psd.component';
     ScanPageComponent,
     StuAttendanceComponent,
     TutorClassesComponent,
-    ForgetPsdComponent
+    ForgetPsdComponent,
+    RegisterSplitPageComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

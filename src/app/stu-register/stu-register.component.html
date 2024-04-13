@@ -1,16 +1,23 @@
 <p>stu-register works!</p>
 
-<div class="container p-5">
-    <h3>Student Registration</h3>
-    <input type="text" id="username" class="mt-5" placeholder="Enter Username">
-    <input type="number" id="contactnumber" class="mt-5" placeholder="Enter Contact Number">
-    <select name="course" class="mt-5" id="course">
-        <option value="Full stack">Full stack</option>
-        <option value="Frontend">Frontend</option>
-        <option value="Python">Python</option>
-        <option value="Backend">Backend</option>
-      </select>
-      <input type="password" class="mt-5" id="password" placeholder="Enter Password">
-      <input type="text" class="mt-5" id="cfm_password" placeholder="Confirm Password">
-    <button type="button" id="login_button">Login</button>
-</div>
+<div class="container">
+  <div class="login_box_container text-center">
+  <h3> Student Registration </h3>
+  <input type="text" id="username" class="input_box mt-3" placeholder="Enter Username">
+  <input type="number" id="contactnumber" class="input_box mt-3" placeholder="Enter Contact Number">
+  <select name="course" class="input_box mt-3" id="course">
+    <option value="" disabled selected hidden>Course</option>
+      <option value="Full stack">Full stack</option>
+      <option value="Frontend">Frontend</option>
+      <option value="Python">Python</option>
+      <option value="Backend">Backend</option>
+      <option value="AWS">AWS</option>
+    </select>
+    
+    <input type="password" class="input_box mt-3" id="password" placeholder="Create Password">
+    <input type="text" class="input_box mt-3" id="cfm_password" placeholder="Confirm Password">
+    <button type="button" class="input_box mt-3 mb-3" id="login_button">Register</button><br>
+  
+</div></div>
+
+
