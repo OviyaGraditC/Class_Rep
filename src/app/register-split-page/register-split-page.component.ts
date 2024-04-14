@@ -17,6 +17,7 @@ export class RegisterSplitPageComponent {
   tutor_register: string = "/tutor_register" 
   loginTypes = { student: 'Student', tutor: 'Tutor', logintype:''};
 loginType : string = "";
+
   constructor(
     private sessionService: ApiServiceService,
     private router: Router) { }

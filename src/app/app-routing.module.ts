@@ -9,8 +9,8 @@ import { ScanPageComponent } from './scan-page/scan-page.component';
 import { StuAttendanceComponent } from './stu-attendance/stu-attendance.component';
 import { TutorClassesComponent } from './tutor-classes/tutor-classes.component';
 import {ForgetPsdComponent} from './forget-psd/forget-psd.component';
-import {RegisterSplitPageComponent} from './register-split-page/register-split-page.component'
-
+import {RegisterSplitPageComponent} from './register-split-page/register-split-page.component';
+import {LogoutComponent} from './logout/logout.component'
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
@@ -24,6 +24,7 @@ const routes: Routes = [
   {path:'tutor_classes', component:TutorClassesComponent},
   {path:'forget_psd', component:ForgetPsdComponent},
   {path:'register_split_page', component:RegisterSplitPageComponent},
+  {path:'logout', component:LogoutComponent}
 ];
 
 @NgModule({

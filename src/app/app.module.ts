@@ -14,6 +14,7 @@ import { TutorClassesComponent } from './tutor-classes/tutor-classes.component';
 import { ForgetPsdComponent } from './forget-psd/forget-psd.component';
 import { RegisterSplitPageComponent } from './register-split-page/register-split-page.component';
 import { FormsModule } from '@angular/forms';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     StuAttendanceComponent,
     TutorClassesComponent,
     ForgetPsdComponent,
-    RegisterSplitPageComponent
+    RegisterSplitPageComponent,
+    LogoutComponent
     
   ],
   imports: [
