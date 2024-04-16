@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ApiServiceService } from '../service/api-service.service';
 import { Router } from '@angular/router';
+import { SessionServiceService } from '../../service/session-service.service';
 
 @Component({
   selector: 'app-stu-home-page',
@@ -11,7 +11,7 @@ export class StuHomePageComponent {
 
   constructor(
     private router : Router,
-    private sessionService : ApiServiceService
+    private sessionService : SessionServiceService
   ){}
 
   OnInit():void

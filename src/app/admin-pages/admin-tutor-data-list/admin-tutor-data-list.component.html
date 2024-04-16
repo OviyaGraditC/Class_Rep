@@ -1,0 +1,27 @@
+<div class="container-fluid d-flex p-0">
+    <div class="col w-100 position-relative d-block">
+        <app-admin-credentials></app-admin-credentials>
+    </div>
+    
+    <div class="col w-100 d-flex position-relative">
+    <table class="table_style border-light w-10" style="font-size: 20px">
+        <tr class="border border-light">
+            <th class="">Id No</th>
+            <th class="">Username</th>
+            <th class="">Password</th>
+            <th class="">Contact Number</th>
+            <th class="">Course</th>
+        </tr>
+        <tr *ngFor="let item of tutorData" class="border border-light">
+            <td class="">{{item.id}}</td>
+            <td class="">{{item.username}}</td>
+            <td class="">{{item.password}}</td>
+            <td class="">{{item.contactnumber}}</td>
+            <td class="">{{item.course}}</td>
+            <td class="">
+                <button type="button" class="btn btn-danger" (click)="deleteData(item.id)">Delete</button>
+            </td>
+        </tr>
+    </table>
+    </div>
+    </div>

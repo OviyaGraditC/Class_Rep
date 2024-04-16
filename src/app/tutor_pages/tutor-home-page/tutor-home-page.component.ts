@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ApiServiceService } from '../service/api-service.service';
+import { SessionServiceService } from '../../service/session-service.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class TutorHomePageComponent {
 
   constructor(
-    private sessionService : ApiServiceService,
+    private sessionService : SessionServiceService,
     private router : Router
   ){}
 

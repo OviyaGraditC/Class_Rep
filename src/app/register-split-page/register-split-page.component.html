@@ -1,10 +1,9 @@
-<p>register-split-page works!</p>
 
 <div class="container text-center">
     <div class="login_box_container text-center">
     <h3> Registration </h3>
     <select name="login_type" [(ngModel)] = "loginType"  class="input_box mt-5 mb-3">
-        <option [value]="loginTypes.logintype" disabled selected hidden>Login Type</option>
+        <option [value]="loginTypes.logintype" disabled selected hidden>Register Type</option>
         <option [value]="loginTypes.student">Student</option>
         <option [value]="loginTypes.tutor">Tutor</option>
     </select><br>

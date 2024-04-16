@@ -1,0 +1,21 @@
+
+<div class="container">
+  <div class="login_box_container text-center">
+  <h3> Tutor Registration </h3>
+  <input type="text" id="username" class="input_box mt-3" [(ngModel)]="username" placeholder="Enter Username">
+  <input type="number" id="contactnumber" class="input_box mt-3" [(ngModel)]="contactnumber" placeholder="Enter Contact Number">
+  <select name="course" class="input_box mt-3" [(ngModel)]="course" id="course">
+    <option value="" disabled selected hidden>Teaching Courses</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="Python">Python</option>
+      <option value="Angular">Angular</option>
+      <option value="React">React</option>
+      <option value="Power Bi">Power Bi</option>
+      <option value="Javascript">Javascript</option>
+    </select>
+    <input type="password" class="input_box mt-3" id="password" [(ngModel)]="password" placeholder="Create Password">
+    <input type="text" class="input_box mt-3" id="cfm_password" placeholder="Confirm Password">
+    <button type="button" class="input_box mt-3 mb-3" id="login_button" (click)="addTutor()">Register</button><br>
+    
+</div></div>

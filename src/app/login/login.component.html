@@ -1,4 +1,4 @@
-<p>login works!</p>
+
 <div class="container text-center">
     <div class="login_box_container text-center">
     <h3> Login </h3>
@@ -6,6 +6,7 @@
         <option [value]="loginTypes.loginType" disabled selected hidden>Login Type</option>
         <option [value]="loginTypes.student">Student</option>
         <option [value]="loginTypes.tutor">Tutor</option>
+        <option [value]="loginTypes.admin">Admin</option>
         </select><br>
     <input type="text" id="username" class="input_box mt-3 mb-3" [(ngModel)]="username" placeholder="Enter Username"><br>
     <input type="password" id="password" class="input_box mt-3 mb-3" [(ngModel)]="password" placeholder="Enter Password"><br>
