@@ -1,13 +1,16 @@
 <div class="container-fluid grad1">
-
-  <div class="container-fluid text-center">
-
-   
- <!-- <app-add-expense></app-add-expense> -->
-  
-  <!-- <router-outlet class="ms-1"> -->
-  <router-outlet>
-
-  </router-outlet>
-</div>
+  <div class="container-fluid text-center mx-0 px-0">
+    <div class="container-fluid text-center ">
+      <div class="d-flex justify-content-end position-fixed top-0 end-0 mx-0 px-0 z-3"><img src="../assets/viber.png" class="row col-2 "/><h5 class="mr-auto me-5 mt-3">8987678889</h5><h5 class="mr-auto ms-5 mt-3">support.cr@classrep.com</h5></div>
+                   <div class="row w-100">
+                    
+        <div class="col-2 w-8 d-flex text-left h-100 px-0 mx-0 bg-light">
+          <a [routerLink]='login' class= "w-100 h-40  position-fixed bg-light " ><img src="../../assets/logo11.png" class="w-85 h-15 float-start bg-light" /></a>
+               </div>
+        <div class="col-8 mt-5 pe-0 ms-0">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

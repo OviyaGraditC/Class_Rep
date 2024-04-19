@@ -14,12 +14,23 @@ export class StuRegisterComponent {
   contactnumber: number = 0;
   password: string = "";
   course: string = "";
-
+  confirmpsd:string = "";
+  login :string="/login";
+  
   constructor(
     private apiServiceService : ApiServiceService,
     private router : Router,
     private sessionService : SessionServiceService
   ){}
+
+  emptyfields()
+  {
+this.username="";
+this.password="";
+this.contactnumber=0;
+this.course="";
+this.confirmpsd="";
+  }
 
   addStudent() {
     let studentData = {
@@ -33,6 +44,7 @@ export class StuRegisterComponent {
       ()=>{
         this.sessionService.setSession(GlobalConstant.loggedInUser, this.username);
         alert("Added Successfully");
+        this.emptyfields();
       },
       err   => 
         {

@@ -1,27 +1,38 @@
-<div class="container-fluid d-flex p-0">
-    <div class="col w-100 position-relative d-block">
+<div class="container-fluid row w-100">
+    <div class="col-2">
         <app-admin-credentials></app-admin-credentials>
     </div>
+    <div class="col-lg ms-0 ps-0 top_spacing">
+        <marquee behavior="scroll" direction="left" style="width: 1379px;">New Class for Python will be started on [01/06/2024] -------- New Class for Angular will be started on [15/06/2024] -------- New Class for React will be started on [22/07/2024] -------- New Class for Power Bi will be started on [25/08/2024] -------- New Class for Data Analyst will be started on [30/06/2024] </marquee>
+        <table class="table_style border-light" style="font-size: 20px">
+            <tr class="border border-light">
+                <th class="text-center">Id No</th>
+                <th class="">Username</th>
+                <th class="">Password</th>
+                <th class="">Contact Number</th>
+                <th class="">Course</th>
+                <th class="">Update</th>
+                <th class="">Delete</th>
+            </tr>
+            <tr *ngFor="let item of tutorData" class="border border-light">
+                <td class="text-center">{{item.id}}</td>
+                <td class="">{{item.username}}</td>
+                <td class="">{{item.password}}</td>
+                <td class="">{{item.contactnumber}}</td>
+                <td class="">{{item.course}}</td>
+                <td class="">
+                    <button type="button" class="btn btn-success" (click)="updateData(item.id)">Update</button> </td>
+                <td class="">
+                    <button type="button" class="btn btn-danger" (click)="deleteData(item.id)">Delete</button>             
+                </td>
+            </tr>
+        </table>
+    </div>
+        </div>
+      
+        
+        
+        
     
-    <div class="col w-100 d-flex position-relative">
-    <table class="table_style border-light w-10" style="font-size: 20px">
-        <tr class="border border-light">
-            <th class="">Id No</th>
-            <th class="">Username</th>
-            <th class="">Password</th>
-            <th class="">Contact Number</th>
-            <th class="">Course</th>
-        </tr>
-        <tr *ngFor="let item of tutorData" class="border border-light">
-            <td class="">{{item.id}}</td>
-            <td class="">{{item.username}}</td>
-            <td class="">{{item.password}}</td>
-            <td class="">{{item.contactnumber}}</td>
-            <td class="">{{item.course}}</td>
-            <td class="">
-                <button type="button" class="btn btn-danger" (click)="deleteData(item.id)">Delete</button>
-            </td>
-        </tr>
-    </table>
-    </div>
-    </div>
+   
+    

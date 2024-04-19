@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class=" d-flex justify-content-center">
   <div class="login_box_container text-center">
   <h3> Student Registration </h3>
   <input type="text" id="username" class="input_box mt-3" [(ngModel)]="username" placeholder="Enter Username">
@@ -14,9 +14,10 @@
     </select>
     
     <input type="password" class="input_box mt-3" id="password" [(ngModel)]="password" placeholder="Create Password">
-    <input type="text" class="input_box mt-3" id="cfm_password" placeholder="Confirm Password">
+    <input type="text" class="input_box mt-3" id="cfm_password" [(ngModel)]="confirmpsd" placeholder="Confirm Password">
     <button type="button" class="input_box mt-3 mb-3" id="login_button" (click)="addStudent()">Register</button><br>
-  
-</div></div>
+    <div class="container-fluid row d-flex " ><p class="col"> Already have an account?<a [routerLink] = 'login'>Login Here</a></p></div>
+  </div>
+</div>
 
 

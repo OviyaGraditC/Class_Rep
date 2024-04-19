@@ -10,16 +10,26 @@ import { SessionServiceService } from '../../service/session-service.service';
 })
 export class TutorRegisterComponent {
 
-  username : string = "";
-  password : string = "";
-  contactnumber : number = 0;
-  course : string = "";
+  username: string = "";
+  password: string = "";
+  contactnumber: number = 0;
+  course: string = "";
+  confirmpsd:string = "";
+login :string="/login";
 
   constructor(
-    private apiServiceService : ApiServiceService,
-    private router : Router,
-    private sessionService : SessionServiceService
-  ){}
+    private apiServiceService: ApiServiceService,
+    private router: Router,
+    private sessionService: SessionServiceService
+  ) { }
+
+  emptyfields() {
+    this.username = "";
+    this.password = "";
+    this.contactnumber = 0;
+    this.course = "";
+    this.confirmpsd = "";
+  }
 
   addTutor() {
     let tutorData = {
@@ -30,14 +40,14 @@ export class TutorRegisterComponent {
     };
 
     this.apiServiceService.addTutorData(tutorData).subscribe(
-      ()=>{
+      () => {
         alert("Added Successfully");
+        this.emptyfields();
       },
-      err   => 
-        {
-          console.log(err);   
-        }
-       )
+      err => {
+        console.log(err);
+      }
+    )
   }
 
 }

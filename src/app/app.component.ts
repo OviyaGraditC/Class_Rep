@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'class_rep';
-
+  login :string = "/login";
   constructor(private router:Router)
   {}
 

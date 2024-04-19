@@ -43,6 +43,22 @@ export class AdminTutorDataListComponent implements OnInit {
         let apiUrl = GlobalConstant.tutorApiURL + "/" + itemId;
         this.apiService.deleteApi(apiUrl);
         alert("deleted Successfully");
+        this.viewStudentDetails()
+      },
+      err   => 
+        {
+          console.log(err);   
+        }
+       )
+  }
+
+  updateData(itemId:string){
+    this.apiService.delTutorData(itemId).subscribe(
+      ()=>{
+        let apiUrl = GlobalConstant.tutorApiURL + "/" + itemId;
+        this.apiService.deleteApi(apiUrl);
+        alert("deleted Successfully");
+        this.viewStudentDetails()
       },
       err   => 
         {
