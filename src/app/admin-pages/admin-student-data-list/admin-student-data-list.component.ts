@@ -61,6 +61,8 @@ export class AdminStudentDataListComponent  implements OnInit{
 updateData(itemId:string){
  
 }
+
+scrolling_text : string = GlobalConstant.marquee_text;
 }
 
 

@@ -32,8 +32,7 @@ export class ApiServiceService {
   }
 
   getApi(apiUrl:string){
-    return this.httpClient.get(apiUrl);
-    
+    return this.httpClient.get(apiUrl);        
   }
  
   deleteApi(apiUrl:string){

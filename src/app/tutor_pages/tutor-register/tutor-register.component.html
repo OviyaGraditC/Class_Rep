@@ -1,10 +1,11 @@
 
 <div class=" d-flex justify-content-center">
   <div class="login_box_container text-center">
+    <form [formGroup]="tutor_register" (ngSubmit)="addTutor()">
   <h3> Tutor Registration </h3>
-  <input type="text" id="username" class="input_box mt-3" [(ngModel)]="username" placeholder="Enter Username">
-  <input type="number" id="contactnumber" class="input_box mt-3" [(ngModel)]="contactnumber" placeholder="Enter Contact Number">
-  <select name="course" class="input_box mt-3" [(ngModel)]="course" id="course">
+  <input type="text" id="username" class="input_box mt-3 form-control" formControlName="username" name="username" placeholder="Enter Username"/>
+  <input type="number" id="contactnumber" class="input_box mt-3 form-control" formControlName="contactnumber" placeholder="Enter Contact Number"/>
+  <select name="course" class="input_box mt-3 form-control" formControlName="course" id="course">
     <option value="" disabled selected hidden>Teaching Courses</option>
       <option value="HTML">HTML</option>
       <option value="CSS">CSS</option>
@@ -14,10 +15,10 @@
       <option value="Power Bi">Power Bi</option>
       <option value="Javascript">Javascript</option>
     </select>
-    <input type="password" class="input_box mt-3" id="password" [(ngModel)]="password" placeholder="Create Password">
-    <input type="text" class="input_box mt-3" id="cfm_password" [(ngModel)]="confirmpsd" placeholder="Confirm Password">
-    <button type="button" class="input_box mt-3 mb-3" id="login_button" (click)="addTutor()">Register</button><br>
+    <input type="password" class="input_box mt-3 form-control" formControlName="password" placeholder="Create Password"/>
+    <input type="text" class="input_box mt-3 form-control" formControlName="confirmpsd" placeholder="Confirm Password"/>
+    <button type="submit" class="input_box mt-3 mb-3" id="login_button" >Register</button><br>
   <div class="container-fluid row d-flex " ><p class="col"> Already have an account?<a [routerLink] = 'login'>Login Here</a></p></div>
- 
+</form>
 </div>
 </div>

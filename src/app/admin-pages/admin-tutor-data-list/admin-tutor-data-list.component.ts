@@ -24,8 +24,7 @@ export class AdminTutorDataListComponent implements OnInit {
   }
 
   viewStudentDetails(){    
-    this.apiService.getAllTutorDataApi(GlobalConstant.tutorApiURL).subscribe(
-      
+    this.apiService.getAllTutorDataApi(GlobalConstant.tutorApiURL).subscribe(      
       (response : any)=>{    
         console.log(response);
         this.tutorData = response;
@@ -35,7 +34,6 @@ export class AdminTutorDataListComponent implements OnInit {
       }
     );
   }
-
 
   deleteData(itemId:string){
     this.apiService.delTutorData(itemId).subscribe(
@@ -48,8 +46,7 @@ export class AdminTutorDataListComponent implements OnInit {
       err   => 
         {
           console.log(err);   
-        }
-       )
+        })
   }
 
   updateData(itemId:string){
@@ -66,4 +63,6 @@ export class AdminTutorDataListComponent implements OnInit {
         }
        )
   }
+
+  scrolling_text : string = GlobalConstant.marquee_text;
 }
