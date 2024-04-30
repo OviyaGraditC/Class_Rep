@@ -14,7 +14,7 @@ export class TutorHomePageComponent {
     private router : Router
   ){}
 
-  OnInit():void
+  ngOnInit():void
   {
     this.sessionService.checkSessionOutput();
   }

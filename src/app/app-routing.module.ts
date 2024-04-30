@@ -8,10 +8,10 @@ import { StuHomePageComponent } from './student_pages/stu-home-page/stu-home-pag
 import { ScanPageComponent } from './scan-page/scan-page.component';
 import { StuAttendanceComponent } from './student_pages/stu-attendance/stu-attendance.component';
 import { TutorClassesComponent } from './tutor_pages/tutor-classes/tutor-classes.component';
-import {ForgetPsdComponent} from './forget-psd/forget-psd.component';
-import {RegisterSplitPageComponent} from './register-split-page/register-split-page.component';
-import {LogoutComponent} from './logout/logout.component';
-import {AdminCredentialsComponent } from './admin-pages/admin-credentials.component';
+import { ForgetPsdComponent} from './forget-psd/forget-psd.component';
+import { RegisterSplitPageComponent} from './register-split-page/register-split-page.component';
+import { LogoutComponent} from './logout/logout.component';
+import { AdminCredentialsComponent } from './admin-pages/admin-credentials.component';
 import { AdminStudentDataListComponent } from './admin-pages/admin-student-data-list/admin-student-data-list.component';
 import { AdminTutorDataListComponent } from './admin-pages/admin-tutor-data-list/admin-tutor-data-list.component';
 

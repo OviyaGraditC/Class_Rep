@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SessionServiceService } from '../../service/session-service.service';
 
@@ -7,15 +7,18 @@ import { SessionServiceService } from '../../service/session-service.service';
   templateUrl: './stu-home-page.component.html',
   styleUrls: ['./stu-home-page.component.scss']
 })
+
 export class StuHomePageComponent {
 
   constructor(
     private router : Router,
     private sessionService : SessionServiceService
   ){}
-
-  OnInit():void
+  ngOnInit(): void {
+        this.sessionService.checkSessionOutput();
+  }
+  scan_btn()
   {
-    this.sessionService.checkSessionOutput();
+    this.router.navigate(['/scan_page']);
   }
 }

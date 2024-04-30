@@ -12,11 +12,10 @@
           <a [routerLink]="login" *ngIf="usertype !== 'Elisha'" class="w-100 h-40 position-fixed"><img
               src="../../assets/logo11.png" class="w-85 h-15 float-start" /></a>
         
-
         <a [routerLink]="login" *ngIf="usertype == 'Elisha'" class="w-100 h-40 position-fixed bg-light"><img
-            src="../../assets/logo11.png" class="w-85 h-15 float-start bg-light" /></a>
+            src="../../assets/logo11.png" class="w-85 h-15 float-start bg-light"/></a>
           </div>
-        <div class="col-8 mt-5 pe-0 ms-2">
+        <div  style="margin-top:200px;">
           <router-outlet></router-outlet>
         </div>
       </div>

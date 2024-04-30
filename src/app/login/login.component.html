@@ -1,19 +1,25 @@
-
-<div class=" d-flex justify-content-center">
-    <div class="login_box_container  ">
-        <h3> Login </h3>
-        <select name="login_type" class="input_box mt-3 mb-3" id="login_type" [(ngModel)]= "loginType">
-            <option [value]="loginTypes.loginType" disabled selected hidden>Login Type</option>
+<div class="d-flex justify-content-center">
+    <div class="login_box_container">
+        <h3>Login</h3>
+        <select name="login_type" class="input_box mt-3 mb-3" id="login_type" [(ngModel)]="loginType">
+            <option [value]="loginTypes.loginType" disabled selected hidden>
+                Login Type
+            </option>
             <option [value]="loginTypes.student">Student</option>
             <option [value]="loginTypes.tutor">Tutor</option>
             <option [value]="loginTypes.admin">Admin</option>
-            </select><br>
-        <input type="text" id="username" class="input_box mt-3 mb-3" [(ngModel)]="username" placeholder="Enter Username"><br>
-        <input type="password" id="password" class="input_box mt-3 mb-3" [(ngModel)]="password" placeholder="Enter Password"><br>
-        <button type="button" class="input_box mt-3 mb-3" id="login_button" (click)="check_login()">Login</button><br>
-        <div class="col">{{msg}}</div><br>
-        <div class="forget_psd_line"><a>Don't have an account?</a><a [routerLink]="split_register_page">Create One</a></div><br>
-        <div class="forget_psd_line"><a [routerLink]="forgetPsd">Forget Password</a></div>
-    
+        </select><br />
+        <input type="text" id="username" class="input_box mt-3 mb-3" [(ngModel)]="username" placeholder="Enter Username" /><br />
+        <input type="password" id="password" class="input_box mt-3 mb-3" [(ngModel)]="password" placeholder="Enter Password" /><br />
+        <button type="button" class="input_box mt-3 mb-3" id="login_button" (click)="check_login()"> Login</button><br />
+        <div class="col">{{ msg }}</div>
+        <br />
+        <div class="forget_psd_line">
+            <a>Don't have an account?</a><a [routerLink]="split_register_page">Create One</a>
+        </div>
+        <br />
+        <div class="forget_psd_line">
+            <a [routerLink]="forgetPsd">Forget Password</a>
+        </div>
     </div>
 </div>
