@@ -18,6 +18,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { AdminCredentialsComponent } from './admin-pages/admin-credentials.component';
 import { AdminStudentDataListComponent } from './admin-pages/admin-student-data-list/admin-student-data-list.component';
 import { AdminTutorDataListComponent } from './admin-pages/admin-tutor-data-list/admin-tutor-data-list.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { AdminTutorDataListComponent } from './admin-pages/admin-tutor-data-list
     LogoutComponent,
     AdminCredentialsComponent,
     AdminStudentDataListComponent,
-    AdminTutorDataListComponent
+    AdminTutorDataListComponent,
+    HeaderComponent
       
   ],
   imports: [

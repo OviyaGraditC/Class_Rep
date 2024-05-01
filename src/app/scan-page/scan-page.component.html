@@ -1,1 +1,18 @@
-<p>scan-page works!</p>
+<div class="container p-5">
+  <div
+    class="container d-flex justify-content-center" style="margin-top: 100px"  >
+    <div class="container d-flex justify-content-center">
+        <form [formGroup]="scanpage" (ngSubmit)="onformsubmit()" class="w-100 text-center" style="margin: 0 auto;">
+    <select name="classroom" id="classroom" class="p-4 w-50 mb-3 form-control" style="margin: 0 auto;" formControlName="classroom" >
+      <option value="" selected hidden disabled>Select Classroom</option>
+      <option value="C1">C1</option>
+      <option value="C2">C2</option>
+      <option value="C3">C3</option>
+      <option value="C4">C4</option>
+    </select><br>
+    <input type="number" class="p-4 w-50 mb-5 form-control" formControlName="idno" id="idno" style="margin: 0 auto;" placeholder="Enter Id Number">
+    <input type="submit" class="btn btn-primary p-4 w-50" >
+</form>
+  </div>
+</div>
+</div>
